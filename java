@@ -1,6 +1,5 @@
 import java.util.Scanner;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -23,29 +22,3 @@ public class Main {
             System.out.println("Choisissez Le deuxième :");
 
 
-            int choix = scanner.nextInt();
-
-
-            double resultat = 0;
-            switch (choix) {
-                case 1:
-                    Addition(num1, num2);
-                    break;
-                case 2:
-                    Soustraction(num1,num2);
-                    break;
-
-            }
-
-        }
-    }
-
-    public static void Addition(double a, double b) {
-        System.out.println("addition : " + (a + b));
-    }
-    public static void Soustraction(double a,double b){
-        System.out.println("soustraction : " + (a-b));
-    }
-
-
-}
