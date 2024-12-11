@@ -37,6 +37,9 @@ public class Main {
                 case 3:
                     Multiplication(num1,num2);
                     break;
+                case 4:
+                    Division((int)num1,(int)num2);
+                    break;
             }
 
         }
@@ -50,7 +53,9 @@ public class Main {
     }
     public static void Multiplication(double a,double b){
         System.out.println("Multiplication  : " + (a*b));
+    }
+    public static void Division(int a,int b){
+        System.out.println("Division  : " + (a/b));
 
     }
-
 }
