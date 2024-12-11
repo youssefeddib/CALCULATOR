@@ -43,6 +43,9 @@ public class Main {
                 case 5:
                     Puissance(num1,num2);
                     break;
+                case 6:
+                    RacineCarrée(num1);
+                    break;
             }
 
         }
@@ -62,6 +65,7 @@ public class Main {
     }
     public static void Puissance(double a, double b){
         System.out.println("Puissance : " + Math.pow(a,b));
-
     }
-}
+    public static void RacineCarrée(double a){
+        System.out.println("RacineCarrée : " + Math.sqrt(a));
+}}
