@@ -40,6 +40,9 @@ public class Main {
                 case 4:
                     Division((int)num1,(int)num2);
                     break;
+                case 5:
+                    Puissance(num1,num2);
+                    break;
             }
 
         }
@@ -56,6 +59,9 @@ public class Main {
     }
     public static void Division(int a,int b){
         System.out.println("Division  : " + (a/b));
+    }
+    public static void Puissance(double a, double b){
+        System.out.println("Puissance : " + Math.pow(a,b));
 
     }
 }
