@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
+
 public class Main {
+ public static void Addition(double a, double b) {
+        System.out.println("addition : " + (a + b));
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

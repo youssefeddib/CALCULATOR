@@ -34,7 +34,9 @@ public class Main {
                 case 2:
                     Soustraction(num1,num2);
                     break;
-
+                case 3:
+                    Multiplication(num1,num2);
+                    break;
             }
 
         }
@@ -46,6 +48,9 @@ public class Main {
     public static void Soustraction(double a,double b){
         System.out.println("soustraction : " + (a-b));
     }
+    public static void Multiplication(double a,double b){
+        System.out.println("Multiplication  : " + (a*b));
 
+    }
 
 }
