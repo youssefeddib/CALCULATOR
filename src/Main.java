@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        double num1;
+        double num2;
 
         while (true) {
             System.out.println("Bienvenue dans la calculatrice !");
@@ -16,36 +18,60 @@ public class Main {
             System.out.println("7.Factorielle");
 
             System.out.print("Choisissez une opération: ");
-            double num1 = scanner.nextDouble();
-
-            System.out.print("Entrez le premiere nombre: ");
-            double num2 = scanner.nextDouble();
-            System.out.println("Choisissez Le deuxième :");
-
-
             int choix = scanner.nextInt();
-
-
-            double resultat = 0;
             switch (choix) {
                 case 1:
-                    Addition(num1, num2);
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+
+                    System.out.println("Choisissez Le deuxième :");
+                    num2 = scanner.nextDouble();
+                    Addition(num1,num2);
                     break;
                 case 2:
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+
+                    System.out.println("Choisissez Le deuxième :");
+                    num2 = scanner.nextDouble();
                     Soustraction(num1,num2);
                     break;
                 case 3:
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+
+                    System.out.println("Choisissez Le deuxième :");
+                    num2 = scanner.nextDouble();
                     Multiplication(num1,num2);
                     break;
                 case 4:
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+
+                    System.out.println("Choisissez Le deuxième :");
+                    num2 = scanner.nextDouble();
                     Division((int)num1,(int)num2);
                     break;
                 case 5:
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+
+                    System.out.println("Choisissez Le deuxième :");
+                    num2 = scanner.nextDouble();
                     Puissance(num1,num2);
                     break;
                 case 6:
-                    RacineCarrée(num1);
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+                    RacineCarre(num1);
                     break;
+                case 7 :
+                    System.out.print("Entrez le premiere nombre: ");
+                    num1 = scanner.nextDouble();
+                    Factorielle(num1);
+                    break;
+                default:
+                    System.out.println("Choix invalide !!");
             }
 
         }
@@ -66,6 +92,19 @@ public class Main {
     public static void Puissance(double a, double b){
         System.out.println("Puissance : " + Math.pow(a,b));
     }
-    public static void RacineCarrée(double a){
+    public static void RacineCarre(double a){
         System.out.println("RacineCarrée : " + Math.sqrt(a));
-}}
+}
+    public static void Factorielle(double a){
+        int res,i;
+
+        res=1;
+        for(i=1;i<=a;i++){
+            res = res * i ;
+        }
+        System.out.println("Factorielle est : "+res);
+
+
+    }
+
+}
